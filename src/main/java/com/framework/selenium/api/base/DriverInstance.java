@@ -31,6 +31,7 @@ public class DriverInstance  extends AbstractTestNGCucumberTests{
 			ChromeOptions chrome_options = new ChromeOptions();
 			chrome_options.addArguments("--start-maximized"); 
 			chrome_options.addArguments("--disable-notifications"); 
+			chromeOptions.add_argument("--remote-debugging-port=9222")
 			remoteWebdriver.set(new ChromeDriver(chrome_options));
 			break;
 		case "firefox":
